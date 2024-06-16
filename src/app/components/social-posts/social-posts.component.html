@@ -1,0 +1,5 @@
+
+@for (p of allposts; track $index) {
+    <app-single-post (deletePost)="onDelete($event)" [displayPost]="p"></app-single-post>
+}
+<app-post-form (submitted)="onSumbit($event)"></app-post-form>
